@@ -4,14 +4,11 @@
   font-family: Roboto, sans-serif;
 }
 
-/*######## PAGE CONTAINER #########*/
-.container {
+/*######## BODY PAGE #########*/
+body {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  max-width: 100vw;
   background: #f2f2f2;
-  height: 100vh;
 }
 
 /*######## ASIDE #########*/
@@ -19,6 +16,7 @@
   display: flex;
   flex-direction: column;
   padding-left: 25px;
+  padding-right: 25px;
   background: #121432;
   width: 396px;
   height: 100vh;
@@ -38,9 +36,13 @@
 
 .sto-inf {
   font-size: 18px;
-  padding-top: 18px;
+  padding-top: 20px;
   padding-left: 14px;
-  margin-top: 150px;
+  padding-right: 25px;
+  display: grid;
+  place-content: end;
+  height: 100vh;
+  justify-content: start;
 }
 
 .menu {
@@ -80,7 +82,7 @@
   border-radius: 40px;
   width: 80vw;
   height: 100vh;
-  margin-left: -90px;
+  margin-left: -40px;
   z-index: 1000;
 }
 
