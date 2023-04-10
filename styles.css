@@ -82,7 +82,7 @@ body {
   border-radius: 40px;
   width: 80vw;
   height: 100vh;
-  margin-left: -40px;
+  margin-left: -100px;
   z-index: 1000;
 }
 
@@ -113,7 +113,8 @@ body {
   position: relative;
   width: 473px;
   height: 50px;
-  padding-left: 40px;
+  padding-left: 14px;
+  padding-right: 61px;
 }
 
 .search-bar input {
@@ -139,25 +140,85 @@ body {
   border-radius: 15px;
   transform: translate(45px);
   border: none;
-  background-color: #93b2ef;
+  background-color: #cedafc;
   width: 49px;
   height: 49px;
   cursor: pointer;
 }
 
 .dashboard-presentation {
+  margin-top: 21px;
+  background: rgb(206,218,252);
+  background: linear-gradient(90deg, rgba(206,218,252,1) 0%, rgba(79,79,214,1) 100%, rgba(14,50,62,1) 100%);
+  height: 204px;
+  border-radius: 15px;
+  margin-right: 58px;
+  margin-left: 61px;
+}
+
+.welcome-msg-info {
+  padding-top: 25px;
+  padding-left: 35px;
   display: flex;
-  width: 776px;
+  flex-direction: column;
+  gap: 22px;
+  align-items: left;
+  justify-content: center;
+}
+
+.welcome-msg-info h2 {
+  color: #222;
+}
+
+.welcome-msg-info p {
+  width: 350px;
+  color: #222;
+}
+
+.welcome-msg-info button {
+  width: 100px;
+  height: 36px;
+  background: #4f4fd6;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.dashboard-img {
+  display: flex;
+  position: relative;
+  bottom: 120px;
+  right: 93px;
+  justify-content: end;
+  transition: all ease 0.3s;
+}
+
+.arrow-image{
+  width: 90px;
+  height: 90px;
+  position: relative;
+  top: 60px;
+  left: 30px;
 }
 
 .dash-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 776px;
-  padding-left: 59px;
-  padding-right: 59px;
+  width: 100%;
   padding-top: 32px;
+}
+
+.dash-header h3 {
+  width: 215px;
+  display: flex;
+  justify-content: center;
+}
+
+.dash-buttons {
+  display: flex;
+  width: 197px;
 }
 
 .upload-button {
@@ -165,9 +226,8 @@ body {
   justify-content: space-evenly;
   width: 137px;
   height: 40px;
-  background-color: #6672FB;
+  background-color: #4f4fd6;
   border-radius: 8px;
-
 }
 
 .upload-button button{
@@ -183,22 +243,93 @@ body {
   align-self: center;
 }
 
+.dash-background-area {
+  height: 207px;
+}
+
+.dash-folders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 46px;
+}
+
+.dash-folders-header h3 {
+  width: 215px;
+  display: flex;
+  justify-content: center;
+}
+
+.dash-folders {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+  gap: 15px;
+}
+
+.folder {
+  width: 240px;
+  height: 197px;
+  background: #F8B849;
+  border-radius: 15px;
+}
+
+.view-all-button {
+  display: flex;
+  align-items: center;
+  width: 137px;
+  height: 46px;
+  padding-right:10px ;
+}
+
+.view-all-button button {
+  width: 87px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+}
+
 /*######## RIGHT SECTION INFO #########*/
 
 .right-section-info {
   width: 496px;
-  background-color: pink;
+  background-color: f2f2f2;
   height: 100vh;
   z-index: 1;
-  margin-left: -35px;
 }
 
 /*######## MEDIA-QUERY #########*/
 
 
-@media (max-width: 2200px) {
+@media (max-width: 1475px) {
+  .upgrade-character {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    top: 68px;
+    left: 45px;
+    transition: all ease 0.3s;
+  }
 
-@media (max-width: 760px) {
+  .arrow-image {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 96px;
+    left: 68px;
+  }
+
+  .aside {
+    padding-left: 0;
+    padding-right: 40px;
+  }
+
+}
+
+@media (max-width: 1040px) {
   .container {
     max-width: 800px;
     background: #f2f2f2;
