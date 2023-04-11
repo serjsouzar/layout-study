@@ -86,6 +86,11 @@ body {
   z-index: 1000;
 }
 
+.header-section {
+  position: relative;
+  bottom: 20px;
+}
+
 .toggle-menu {
   position: relative;
   width: 30px;
@@ -207,7 +212,6 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-top: 32px;
 }
 
 .dash-header h3 {
@@ -298,16 +302,94 @@ body {
   border: none;
 }
 
-#red {
+#red-folder {
   background: #E8523F;
 }
 
-#blue {
+#blue-folder {
   background: #6672FB;
 }
 
-#orange {
+#orange-folder {
   background: #F8B849;
+}
+
+.recent-files-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.recent-files-header h3 {
+    width: 219px;
+    display: flex;
+    justify-content: center;
+}
+
+.view-all-button2 {
+  display: flex;
+  align-items: center;
+  width: 137px;
+  height: 46px;
+  padding-right:10px ;
+}
+
+.view-all-button2 button {
+  width: 87px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+}
+
+.files-section {
+  padding-top: 6px;
+  padding-left: 56px;
+  padding-right: 56px;
+}
+
+.files-bar {
+  height: 204px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.file {
+  border-radius: 18px;
+  height: 68px;
+  background: #F7F7F7;
+}
+
+.folder-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.folder-header .fldr-icon {
+  padding: 15px
+}
+
+.folder-header .options-icon {
+  height: 19px;
+  width: 5px;
+  padding: 21px;
+}
+
+.folder-content-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 22px;
+  gap: 14px;
+}
+
+.folder-content-info p {
+  color: #fff;
+  font-weight: 500;
 }
 
 /*######## RIGHT SECTION INFO #########*/
@@ -345,9 +427,50 @@ body {
     padding-right: 40px;
   }
 
+  .dash-folders {
+    height: 99px;
+  }
+
   .folder {
     width: 140px;
     height: 99px;
+  }
+
+  .folder-header {
+    margin-top: 2px;
+    align-items: center;
+    height: 28px;
+  }
+
+  .fldr-icon {
+    padding: 10px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .folder-header .options-icon {
+    height: 14px;
+    width: 4px;
+    padding: 14px;
+  }
+
+  .folder-content-info {
+    padding-left: 13px;
+    gap: 2px;
+  }
+
+  .folder-content-info p {
+    font-size: 11px;
+  }
+
+  .folder-content-info .group-profiles {
+    width: 46px;
+    height: 17px;
+  }
+
+  .folder-content-info .files-aditional-info {
+    width: 116px;
+    height: 27px
   }
 }
 
@@ -380,9 +503,165 @@ body {
     width: 500px;
   }
 
+  .dash-folders {
+    height: 99px;
+  }
 
   .dashboard input:checked ~ .aside {
     left: 0;
     display: block;
   }
+
+  .folder-header {
+    margin-top: 2px;
+    align-items: center;
+    height: 28px;
+  }
+
+  .fldr-icon {
+    padding: 10px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .folder-header .options-icon {
+    height: 14px;
+    width: 4px;
+    padding: 14px;
+  }
+
+  .folder-content-info {
+    padding-left: 13px;
+    gap: 2px;
+  }
+
+  .folder-content-info p {
+    font-size: 11px;
+  }
+
+  .folder-content-info .group-profiles {
+    width: 46px;
+    height: 17px;
+  }
+
+  .folder-content-info .files-aditional-info {
+    width: 116px;
+    height: 27px
+  }
+}
+
+@media (max-width: 760px) {
+  .aside {
+    display: none;
+  }
+
+  .dashboard input:checked ~ .menu {
+    display: flex;
+    z-index: 2000;
+  }
+
+  .dashboard {
+    width: 760px;
+    position: relative;
+    z-index: 1000;
+    height: 100vh;
+    border-radius: 0;
+    margin-left: 0;
+  }
+
+  .header-section {
+    width: 100vw;
+    bottom: 0;
+  }
+
+  .toggle-menu {
+    position: relative;
+    top: 19px;
+    left: 22px;
+    width: 30px;
+    height: 29px;
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0;
+  }
+
+  .driver-toggle {
+    position: relative;
+    bottom: 22px;
+    left: 22px;
+    opacity: 1;
+  }
+
+  .search-bar {
+    display: flex;
+    position: relative;
+    width: 473px;
+    right: 21px;
+    height: 50px;
+    padding-left: 0;
+  }
+
+  .search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transform: translate(45px);
+    border: none;
+    background-color: #cedafc;
+    width: 50px;
+    height: 49px;
+    cursor: pointer;
+  }
+
+  .search-bar input {
+    width: 320px;
+  }
+
+  .dash-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 93%;
+    padding-top: 17px;
+  }
+
+  .dash-header h3 {
+    width: 144px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .dash-buttons {
+    display: flex;
+    width: 130px;
+  }
+
+  .dashboard-presentation {
+    width: 86%;
+    margin-left: 25px;
+    margin-right: 0;
+  }
+
+  .welcome-msg-info p {
+    width: 246px;
+  }
+
+  .dashboard-img {
+    bottom: 110px;
+  }
+
+  .upgrade-character {
+    width: 126px;
+    height: 108px;
+    border-radius: 8px;
+    top: 51px;
+    left: 39px;
+  }
+
+  .arrow-image {
+    top: 77px;
+  }
+
+
 }
