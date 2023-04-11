@@ -189,7 +189,7 @@ body {
   display: flex;
   position: relative;
   bottom: 120px;
-  right: 93px;
+  width: 90%;
   justify-content: end;
   transition: all ease 0.3s;
 }
@@ -247,6 +247,12 @@ body {
   height: 207px;
 }
 
+.folder-section {
+  padding-top: 6px;
+  padding-left: 56px;
+  padding-right: 56px;
+}
+
 .dash-folders-header {
   display: flex;
   justify-content: space-between;
@@ -256,25 +262,25 @@ body {
 }
 
 .dash-folders-header h3 {
-  width: 215px;
+  width: 185px;
   display: flex;
   justify-content: center;
 }
 
 .dash-folders {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
   width: 100%;
-  height: 250px;
-  gap: 15px;
+  height: 197px;
+  flex-wrap: wrap;
+  
 }
 
 .folder {
   width: 240px;
   height: 197px;
-  background: #F8B849;
   border-radius: 15px;
+  transition: all ease 0.3s;
 }
 
 .view-all-button {
@@ -292,6 +298,18 @@ body {
   border: none;
 }
 
+#red {
+  background: #E8523F;
+}
+
+#blue {
+  background: #6672FB;
+}
+
+#orange {
+  background: #F8B849;
+}
+
 /*######## RIGHT SECTION INFO #########*/
 
 .right-section-info {
@@ -304,7 +322,7 @@ body {
 /*######## MEDIA-QUERY #########*/
 
 
-@media (max-width: 1475px) {
+@media (max-width: 1440px) {
   .upgrade-character {
     width: 120px;
     height: 120px;
@@ -327,6 +345,10 @@ body {
     padding-right: 40px;
   }
 
+  .folder {
+    width: 140px;
+    height: 99px;
+  }
 }
 
 @media (max-width: 1040px) {
@@ -348,6 +370,7 @@ body {
   }
 
   .driver-toggle {
+    padding-top: 10px;
     opacity: 1;
   }
 
