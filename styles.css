@@ -455,10 +455,139 @@ body {
 /*######## RIGHT SECTION INFO #########*/
 
 .right-section-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 496px;
   background-color: f2f2f2;
   height: 100vh;
   z-index: 1;
+}
+
+.right-header {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 47px;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-top: 11px;
+  padding-left: 69px;
+  gap: 29px;
+}
+
+.user-img {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+}
+
+.name-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.calendar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  width: 350px;
+  height: 354px;
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 11px;
+  margin-top: 10px;
+}
+
+.your-task {
+  width: 83%;
+}
+
+.task-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.view-all-task button {
+  width: 87px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background: #fff;
+  box-shadow: 0 1px 4px black;
+}
+
+.task-section {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.task-field {
+  display: flex;
+  width: 99%;
+  height: 100px;
+  background-color: red;
+  border-radius: 30px;
+  padding: 3px;
+}
+
+.task-field .side-color {
+  height: 106px;
+  background: #fff;
+  position: relative;
+  bottom: 3px;
+  left: 3px;
+  border-radius: 26px;
+  width: 340px;
+}
+
+.tsk-header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.task-title {
+  display: flex;
+  flex-direction: row;
+  gap: 65px;
+  justify-content: space-around;
+}
+
+.task-title img {
+  width: 3px;
+  height: 15px;
+}
+
+.storage {
+  width: 83%;
+}
+
+.storage-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.view-all-storage button {
+  width: 87px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background: #fff;
+  box-shadow: 0 1px 4px black;
+}
+
+.storage-graphic img {
+  width: 350px;
+  height: 300px;
 }
 
 /*######## MEDIA-QUERY #########*/
