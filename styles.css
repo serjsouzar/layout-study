@@ -320,7 +320,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-top: 10px;
+  padding-top: 46px;
 }
 
 .recent-files-header h3 {
@@ -342,26 +342,6 @@ body {
   height: 30px;
   border-radius: 10px;
   border: none;
-}
-
-.files-section {
-  padding-top: 6px;
-  padding-left: 56px;
-  padding-right: 56px;
-}
-
-.files-bar {
-  height: 204px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  width: 100%;
-}
-
-.file {
-  border-radius: 18px;
-  height: 68px;
-  background: #F7F7F7;
 }
 
 .folder-header {
@@ -392,6 +372,85 @@ body {
   color: #fff;
   font-weight: 500;
 }
+
+.files-section {
+  padding-top: 6px;
+  padding-left: 56px;
+  padding-right: 56px;
+}
+
+.files-bar {
+  height: 204px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.file {
+  border-radius: 18px;
+  height: 68px;
+  background: #F7F7F7;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+
+.file {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.file-img-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.file-menu-info {
+  display: flex;
+  width: 58%;
+  justify-content: space-around;
+}
+
+.file:hover {
+  background-color: #4f4fd6;
+  cursor: pointer;
+  transition: all ease 0.3s;
+  box-shadow: 0 3px 9px black;
+}
+
+.file:hover .file-img-title p {
+  color: #fff;
+}
+
+.file:hover .dark {
+  opacity: 0;
+}
+
+.file .light {
+  opacity: 0;
+}
+
+.file:hover .light {
+  opacity: 1;
+}
+
+.group-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.group-icons .dark {
+  position: relative;
+}
+
+.group-icons .light {
+  position: absolute;
+}
+
 
 /*######## RIGHT SECTION INFO #########*/
 
